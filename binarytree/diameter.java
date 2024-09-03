@@ -18,22 +18,15 @@ public class diameter {
         calcHeight(root);
         return diameter;
     }
-
-    // Helper method to calculate height and update the diameter
     int calcHeight(TreeNode node) {
         if (node == null) {
-            // Return -1 for null nodes, representing height of an empty subtree
             return 0;
         }
 
-        // Recursively compute the height of left and right subtrees
         int leftHeight = calcHeight(node.left);
         int rightHeight = calcHeight(node.right);
-
-        // Update the diameter if the path through this node is longer
         diameter = Math.max(diameter, leftHeight + rightHeight );
 
-        // Return the height of the current node
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
