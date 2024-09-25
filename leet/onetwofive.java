@@ -2,18 +2,24 @@ package leet;
 
 public class onetwofive {
     public static boolean isPalindrome(String s) {
-        String cleanedString = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-        int left = 0;
-        int right = cleanedString.length() - 1;
-        while (left < right) {
-            if (cleanedString.charAt(left) != cleanedString.charAt(right)) {
+        s = s.toLowerCase();
+
+        StringBuilder filteredString = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (Character.isLetterOrDigit(c)) {
+                filteredString.append(c);
+            }
+        }
+        String filtered = filteredString.toString();
+
+        int length = filtered.length();
+        for (int i = 0; i < length / 2; i++) {
+            if (filtered.charAt(i) != filtered.charAt(length - i - 1)) {
                 return false;
             }
-            left++;
-            right--;
         }
-
         return true;
+
     }
 
     public static void main(String[] args) {
