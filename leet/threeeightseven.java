@@ -18,12 +18,13 @@ public class threeeightseven {
         for (int i = 0; i < s.length(); i++) {
             if (cc.get(s.charAt(i)) == 1) {
                 return i;
+
             }
         }
         return -1;
     }
 
-    public static int firstUniqChar1(String s) {
+    public static int first(String s) {
         int[] charCount = new int[26];
         for (char c : s.toCharArray()) {
             charCount[c - 'a']++;
