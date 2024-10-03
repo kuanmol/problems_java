@@ -1,4 +1,4 @@
-package leet;
+package leet.string;
 
 import java.util.*;
 

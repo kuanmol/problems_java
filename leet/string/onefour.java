@@ -1,4 +1,4 @@
-package leet;
+package leet.string;
 
 public class onefour {
     public static void main(String[] args) {

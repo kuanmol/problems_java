@@ -1,4 +1,4 @@
-package leet;
+package leet.string;
 
 class ShortestCompletingWord {
     public static String shortestCompletingWord(String licensePlate, String[] words) {

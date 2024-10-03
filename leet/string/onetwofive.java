@@ -1,4 +1,4 @@
-package leet;
+package leet.string;
 
 public class onetwofive {
     public static boolean isPalindrome(String s) {

@@ -1,4 +1,4 @@
-package leet;
+package leet.string;
 
 public class threefourfour {
     public static void reverseString(char[] s) {

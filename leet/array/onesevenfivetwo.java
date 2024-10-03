@@ -1,4 +1,4 @@
-package leet;
+package leet.array;
 
 public class onesevenfivetwo {
 
