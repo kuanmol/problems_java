@@ -2,7 +2,7 @@ package leet.string;
 
 public class onezerofourseven {
 
-    public static String removeDuplicates(String s) {
+    public static String rr(String s) {
         int end = -1;
         char[] chars = s.toCharArray();
 
@@ -20,8 +20,6 @@ public class onezerofourseven {
 
         String s1 = "abbaca";
 
-        System.out.println(removeDuplicates(s1));
-
+        System.out.println(rr(s1));
     }
-
 }
