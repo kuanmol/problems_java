@@ -5,5 +5,6 @@ public class prac {
         for (int i = 0; i >-1 ; i++) {
             System.out.println("cly");
         }
+        /// she is stupidest
     }
 }
