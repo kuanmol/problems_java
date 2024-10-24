@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class prac {
     public static void main(String[] args) {
-        for (int i = 0; i >-1 ; i++) {
-            System.out.println("cly");
+        int a = 0;
+        if(a == 22){
+            System.out.println("dsfgdh");
+        }else if(a == 50){
+            System.out.println("ak");
         }
-        /// she is stupidest
     }
 }
