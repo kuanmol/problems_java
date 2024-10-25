@@ -1,6 +1,5 @@
 package leet.array;
 
-import java.util.Scanner;
 
 public class foureight {
     public static void main(String[] args) {
@@ -27,11 +26,11 @@ public class foureight {
                 matrix[i][n - 1 - j] = temp;
             }
         }
-        for (int[] ints : matrix) {
+        for (int[] num : matrix) {
             System.out.println();
             int j = 0;
             while (j < n) {
-                System.out.print(ints[j]);
+                System.out.print(num[j]);
                 j++;
             }
         }
