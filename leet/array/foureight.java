@@ -27,10 +27,12 @@ public class foureight {
                 matrix[i][n - 1 - j] = temp;
             }
         }
-        for (int i = 0; i < n; i++) {
+        for (int[] ints : matrix) {
             System.out.println();
-            for (int j = 0; j < n; j++) {
-                System.out.print(matrix[i][j]);
+            int j = 0;
+            while (j < n) {
+                System.out.print(ints[j]);
+                j++;
             }
         }
     }
