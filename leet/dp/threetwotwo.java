@@ -21,7 +21,7 @@ public class threetwotwo {
 
         // Example 1
         int[] coins1 = {1, 2, 5};
-        int amount1 = 6;
+        int amount1 = 11;
         System.out.println(solution.coinChange(coins1, amount1)); // Output: 3
 
         // Example 2
