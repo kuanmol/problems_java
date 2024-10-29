@@ -22,7 +22,7 @@ public class oneonefourthree {
     public static void main(String[] args) {
         oneonefourthree solution = new oneonefourthree();
 
-        String text1 = "abcde";
+        String text1 = "abc";
         String text2 = "ace";
         System.out.println(solution.longestCommonSubsequence(text1, text2)); // Output: 3
     }
