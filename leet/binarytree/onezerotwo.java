@@ -19,7 +19,6 @@ class onezerotwo {
 
             for (int i = 0; i < levelSize; i++) {
                 TreeNode node = queue.poll();
-                assert node != null;
                 currentLevel.add(node.val);
 
                 if (node.left != null) queue.add(node.left);
