@@ -1,4 +1,4 @@
-package leet.gen;
+package leet.backtrack;
 
 import java.util.ArrayList;
 import java.util.List;
