@@ -41,14 +41,17 @@ class onezerotwo {
         root.right.right = new TreeNode(7);
 
         System.out.println("Level Order Traversal: " + solution.levelOrder(root));
-        // Output: [[3], [9, 20], [15, 7]]
     }
-}
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int val) { this.val = val; }
+
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+    }
 }
 
