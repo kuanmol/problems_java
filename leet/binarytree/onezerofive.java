@@ -9,7 +9,7 @@ class onezerofive {
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         for (int i = 0; i < inorder.length; i++) {
-            inorderMap.put(inorder[i], i);  // Store indices of inorder values for quick lookup
+            inorderMap.put(inorder[i], i);
         }
         return buildSubtree(preorder, 0, inorder.length - 1);
     }
