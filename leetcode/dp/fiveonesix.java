@@ -18,7 +18,6 @@ public class fiveonesix {
                 prev = temp;
             }
         }
-
         return dp[n - 1];
     }
     public static void main(String[] args) {
