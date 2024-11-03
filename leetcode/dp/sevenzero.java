@@ -19,4 +19,4 @@ public class sevenzero {
         return curr;
     }
 }
-// curr have the value of previous climbing stair ways, which going to temp and puting value to prev , when we calcutlate new curr we add curr and prev
+// curr have the value of previous climbing stair ways, which going to temp and puting value to prev , when we calcutlate new curr we add curr and pre
