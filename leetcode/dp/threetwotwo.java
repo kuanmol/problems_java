@@ -36,3 +36,4 @@ public class threetwotwo {
     }
 }
 
+//i is the updated amount and +1 mean the new coin added i.e coin consumed and decrease the i i.e amt so one coin added.
