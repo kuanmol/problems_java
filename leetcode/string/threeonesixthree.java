@@ -22,8 +22,6 @@ public class threeonesixthree {
 
     public static void main(String[] args) {
 
-        System.out.println(compressString("aaaaaaaaaaaaaabb")); // Output: "9a5a2b"
+        System.out.println(compressString("aaaaaaaaaaaaaabb"));
     }
-
-
 }

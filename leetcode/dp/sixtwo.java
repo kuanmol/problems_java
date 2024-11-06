@@ -2,8 +2,8 @@ package leetcode.dp;
 
 public class sixtwo {
     public static void main(String[] args) {
-        int m=4;
-        int n=3;
+        int m=5;
+        int n=4;
         System.out.println(uniquePaths(m,n));
     }
 
