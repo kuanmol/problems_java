@@ -18,6 +18,7 @@ public class seventwo {
             return word2Index;
         }
         if (word2Index == 0) {
+
             return word1Index;
         }
         if (memo[word1Index][word2Index] != null) {
