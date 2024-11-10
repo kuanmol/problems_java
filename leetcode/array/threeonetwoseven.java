@@ -7,21 +7,20 @@ public class threeonetwoseven {
                 {'B', 'W', 'W'},
                 {'B', 'W', 'B'}
         };
-        System.out.println(canMakeSquare(grid1)); // Output: true
+        System.out.println(canMakeSquare(grid1));
 
         char[][] grid2 = {
                 {'B', 'W', 'B'},
                 {'W', 'B', 'W'},
                 {'B', 'W', 'B'}
         };
-        System.out.println(canMakeSquare(grid2)); // Output: false
-
+        System.out.println(canMakeSquare(grid2));
         char[][] grid3 = {
                 {'B', 'W', 'B'},
                 {'B', 'W', 'W'},
                 {'B', 'W', 'W'}
         };
-        System.out.println(canMakeSquare(grid3)); // Output: true
+        System.out.println(canMakeSquare(grid3));
     }
 
     public static boolean canMakeSquare(char[][] grid) {
