@@ -1,6 +1,6 @@
 interface Animal {
     final int a=10;
-    // Interface method (does not have a body)
+
     void sound();
 
     default void sleep() {
