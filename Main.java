@@ -3,7 +3,6 @@ interface Animal {
     // Interface method (does not have a body)
     void sound();
 
-    // Default method
     default void sleep() {
         System.out.println("The animal is sleeping.");
         System.out.println(a);
