@@ -1,10 +1,10 @@
-public  class Main {
+public class Main {
+    static int a = 2;
+
     public static void main(String[] args) {
-        Main main = new Main();
-        int a=10; int b=20;
-        add(a,b);
-    }
-    static void add(int a, int b){
-        System.out.print(a+b);
+        int a=1;
+        int b=1;
+        System.out.println(a++);
+        System.out.println(++b);
     }
 }
