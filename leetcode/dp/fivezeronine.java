@@ -2,7 +2,7 @@ package leetcode.dp;
 
 public class fivezeronine {
     public static void main(String[] args) {
-        int n=100;
+        int n=10;
         System.out.println(fibonacci(n));
     }
 
@@ -15,6 +15,7 @@ public class fivezeronine {
             int c=p1+p2;
             p2=p1;
             p1=c;
+            System.out.println(p1);
         }
         return p1;
     }

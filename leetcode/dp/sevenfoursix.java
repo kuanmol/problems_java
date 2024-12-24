@@ -23,4 +23,5 @@ public class sevenfoursix {
 
         return Math.min(prev1, prev2);
     }
+
 }
