@@ -3,40 +3,6 @@ package leetcode.binarytree;
 public class twotwosix {
 
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-    public TreeNode invertTree(TreeNode root) {
-        if (root == null) {
-            return null;
-        }
-
-        TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
-
-        invertTree(root.left);
-        invertTree(root.right);
-
-        return root;
-    }
-
     public static void main(String[] args) {
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
@@ -59,6 +25,40 @@ public class twotwosix {
         System.out.print(node.val + " ");
         printPreorder(node.left);
         printPreorder(node.right);
+    }
+
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        invertTree(root.left);
+        invertTree(root.right);
+
+        return root;
+    }
+
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }
 

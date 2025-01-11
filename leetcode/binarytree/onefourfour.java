@@ -5,20 +5,6 @@ import java.util.List;
 
 public class onefourfour {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-
     static void periios(TreeNode root, List<Integer> arr) {
         if (root == null) {
             return;
@@ -26,12 +12,6 @@ public class onefourfour {
         arr.add(root.val);
         periios(root.left, arr);
         periios(root.right, arr);
-    }
-
-    public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> arr = new ArrayList<>();
-        periios(root, arr); // Call the periios method
-        return arr;
     }
 
     public static void main(String[] args) {
@@ -46,5 +26,27 @@ public class onefourfour {
         List<Integer> result = solution.preorderTraversal(root);
 
         System.out.println(result);
+    }
+
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> arr = new ArrayList<>();
+        periios(root, arr); // Call the periios method
+        return arr;
+    }
+
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }

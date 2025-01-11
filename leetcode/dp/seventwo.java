@@ -1,12 +1,12 @@
 package leetcode.dp;
 
 public class seventwo {
+    static Integer memo[][];
+
     public static void main(String[] args) {
         String word1 = "horse", word2 = "ros";
         System.out.println(minDistance(word1, word2));
     }
-
-    static Integer memo[][];
 
     public static int minDistance(String word1, String word2) {
         memo = new Integer[word1.length() + 1][word2.length() + 1];

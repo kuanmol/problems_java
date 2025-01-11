@@ -16,7 +16,7 @@ public class fiveeight {
     private static int norepeat(int n1, int n2) {
         int count = 0;
         for (int i = n1; i <= n2; i++) {
-            if (checkbool(i)){
+            if (checkbool(i)) {
                 count++;
             }
         }

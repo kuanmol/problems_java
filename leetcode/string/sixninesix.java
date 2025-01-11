@@ -20,7 +20,7 @@ public class sixninesix {
 
         count += Math.min(prev, curr);
 
-        return count;   
+        return count;
     }
 
     public static void main(String[] args) {

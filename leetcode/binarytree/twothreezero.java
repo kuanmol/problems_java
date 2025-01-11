@@ -4,18 +4,16 @@ import java.util.Stack;
 
 public class twothreezero {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+    public static void main(String[] args) {
+        twothreezero solution = new twothreezero();
 
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
+        TreeNode root1 = new TreeNode(3);
+        root1.left = new TreeNode(1);
+        root1.right = new TreeNode(4);
+        root1.left.right = new TreeNode(2);
+        int k1 = 1;
+        System.out.println(solution.kthSmallest(root1, k1));
+
     }
 
     public int kthSmallest(TreeNode root, int k) {
@@ -36,15 +34,22 @@ public class twothreezero {
         return -1;
     }
 
-    public static void main(String[] args) {
-        twothreezero solution = new twothreezero();
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-        TreeNode root1 = new TreeNode(3);
-        root1.left = new TreeNode(1);
-        root1.right = new TreeNode(4);
-        root1.left.right = new TreeNode(2);
-        int k1 = 1;
-        System.out.println(solution.kthSmallest(root1, k1));
+        TreeNode() {
+        }
 
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }

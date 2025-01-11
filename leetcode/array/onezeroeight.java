@@ -2,25 +2,6 @@ package leetcode.array;
 
 public class onezeroeight {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public static TreeNode sortedArrayToBST(int[] nums) {
         return createBst(nums, 0, nums.length - 1);
     }
@@ -51,6 +32,25 @@ public class onezeroeight {
         TreeNode root = sortedArrayToBST(nums);
         System.out.println("Pre-order traversal of the constructed BST:");
         preOrder(root);
+    }
+
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 
 }

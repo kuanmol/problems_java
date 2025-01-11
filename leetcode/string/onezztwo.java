@@ -1,8 +1,17 @@
 package leetcode.string;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class onezztwo {
+
+    public static void main(String[] args) {
+        onezztwo solution = new onezztwo();
+        String[] words = {"bella", "label", "roller"};
+        List<String> commonCharacters = solution.commonChars(words);
+        System.out.println(commonCharacters); // Output: ["e", "l", "l"]
+    }
 
     public List<String> commonChars(String[] words) {
         List<String> result = new ArrayList<>();
@@ -36,13 +45,6 @@ public class onezztwo {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        onezztwo solution = new onezztwo();
-        String[] words = {"bella", "label", "roller"};
-        List<String> commonCharacters = solution.commonChars(words);
-        System.out.println(commonCharacters); // Output: ["e", "l", "l"]
     }
 }
 

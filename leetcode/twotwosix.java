@@ -14,6 +14,21 @@ class Node {
 class BinaryTree {
     Node root;
 
+    /* testing for example nodes */
+    public static void main(String[] args) {
+        /* creating a binary tree and entering the nodes */
+        BinaryTree tree = new BinaryTree();
+        tree.root = new Node(1);
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+        tree.mirror();
+        System.out.println(
+                "Inorder traversal of the mirror tree is");
+        tree.inOrder();
+    }
+
     void mirror() {
         root = mirror(root);
     }
@@ -45,20 +60,5 @@ class BinaryTree {
         System.out.print(node.data + " ");
 
         inOrder(node.right);
-    }
-
-    /* testing for example nodes */
-    public static void main(String[] args) {
-        /* creating a binary tree and entering the nodes */
-        BinaryTree tree = new BinaryTree();
-        tree.root = new Node(1);
-        tree.root.left = new Node(2);
-        tree.root.right = new Node(3);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(5);
-        tree.mirror();
-        System.out.println(
-                "Inorder traversal of the mirror tree is");
-        tree.inOrder();
     }
 }

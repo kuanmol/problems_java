@@ -1,6 +1,6 @@
 package extra.hashing;
 
-import java.util.*;
+import java.util.HashMap;
 
 public class getDefault {
 

@@ -1,6 +1,14 @@
 package leetcode.dp;
 
 public class oneonefourthree {
+    public static void main(String[] args) {
+        oneonefourthree solution = new oneonefourthree();
+
+        String text1 = "abc";
+        String text2 = "ace";
+        System.out.println(solution.longestCommonSubsequence(text1, text2)); // Output: 3
+    }
+
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length(), n = text2.length();
         int[][] dp = new int[m + 1][n + 1];
@@ -17,14 +25,6 @@ public class oneonefourthree {
         }
 
         return dp[m][n];
-    }
-
-    public static void main(String[] args) {
-        oneonefourthree solution = new oneonefourthree();
-
-        String text1 = "abc";
-        String text2 = "ace";
-        System.out.println(solution.longestCommonSubsequence(text1, text2)); // Output: 3
     }
 }
 

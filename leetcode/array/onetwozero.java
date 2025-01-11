@@ -1,10 +1,23 @@
 package leetcode.array;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class onetwozero {
+    public static void main(String[] args) {
+        onetwozero solution = new onetwozero();
+
+        List<List<Integer>> triangle = new ArrayList<>();
+        triangle.add(new ArrayList<>(Arrays.asList(2)));
+        triangle.add(new ArrayList<>(Arrays.asList(3, 4)));
+        triangle.add(new ArrayList<>(Arrays.asList(6, 5, 7)));
+        triangle.add(new ArrayList<>(Arrays.asList(4, 1, 8, 3)));
+
+        int result = solution.minimumTotal(triangle);
+        System.out.println("Minimum path sum: " + result);
+    }
+
     public int minimumTotal(List<List<Integer>> triangle) {
 
         int n = triangle.size();
@@ -25,18 +38,5 @@ public class onetwozero {
         int diagonal = triangle.get(i).get(j) + solve(i + 1, j + 1, n, triangle, dp);
 
         return dp[i][j] = Math.min(down, diagonal);
-    }
-
-    public static void main(String[] args) {
-        onetwozero solution = new onetwozero();
-
-        List<List<Integer>> triangle = new ArrayList<>();
-        triangle.add(new ArrayList<>(Arrays.asList(2)));
-        triangle.add(new ArrayList<>(Arrays.asList(3, 4)));
-        triangle.add(new ArrayList<>(Arrays.asList(6, 5, 7)));
-        triangle.add(new ArrayList<>(Arrays.asList(4, 1, 8, 3)));
-
-        int result = solution.minimumTotal(triangle);
-        System.out.println("Minimum path sum: " + result);
     }
 }

@@ -2,25 +2,6 @@ package extra.array;
 
 class ArrayConditionsChecker {
 
-    public boolean checkArrayConditions(int[] arr, int threshold) {
-        return checkArrayConditions(arr, 0, threshold);
-    }
-
-    private boolean checkArrayConditions(int[] arr, int index, int threshold) {
-        // Base case: If we reach the end of the extra.array, return true
-        if (index >= arr.length) {
-            return true;
-        }
-
-        // Check conditions for the current element at index
-        boolean condition1 = arr[index] > 0;            // Element is positive
-        boolean condition2 = arr[index] % 2 == 0;       // Element is even
-        boolean condition3 = arr[index] < threshold;    // Element is less than the threshold
-
-        // Combine conditions using && operator
-        return condition1 && condition2 && condition3 && checkArrayConditions(arr, index + 1, threshold);
-    }
-
     public static void main(String[] args) {
         // Example usage:
         int[] arr1 = {2, 4, 6, 8};
@@ -40,5 +21,24 @@ class ArrayConditionsChecker {
         // Check conditions for arr3 (all elements are positive, even, and less than 50)
         boolean result3 = checker.checkArrayConditions(arr3, 50);
         System.out.println("Conditions for arr3: " + result3);  // Output: true
+    }
+
+    public boolean checkArrayConditions(int[] arr, int threshold) {
+        return checkArrayConditions(arr, 0, threshold);
+    }
+
+    private boolean checkArrayConditions(int[] arr, int index, int threshold) {
+        // Base case: If we reach the end of the extra.array, return true
+        if (index >= arr.length) {
+            return true;
+        }
+
+        // Check conditions for the current element at index
+        boolean condition1 = arr[index] > 0;            // Element is positive
+        boolean condition2 = arr[index] % 2 == 0;       // Element is even
+        boolean condition3 = arr[index] < threshold;    // Element is less than the threshold
+
+        // Combine conditions using && operator
+        return condition1 && condition2 && condition3 && checkArrayConditions(arr, index + 1, threshold);
     }
 }

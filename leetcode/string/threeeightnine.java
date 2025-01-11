@@ -3,8 +3,9 @@ package leetcode.string;
 public class threeeightnine {
     public static void main(String[] args) {
         String s = "abcd", t = "abcde";
-        System.out.println(findTheDifference(s,t));
+        System.out.println(findTheDifference(s, t));
     }
+
     public static char findTheDifference(String s, String t) {
         int result = 0;
 

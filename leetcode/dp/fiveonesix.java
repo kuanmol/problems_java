@@ -20,8 +20,9 @@ public class fiveonesix {
         }
         return dp[n - 1];
     }
+
     public static void main(String[] args) {
-        String s="abak";
+        String s = "abak";
         System.out.println(longestPalindromeSubseq(s));
     }
 }

@@ -1,6 +1,14 @@
 package leetcode.gen;
 
 class sixnine {
+    public static void main(String[] args) {
+        sixnine solution = new sixnine();
+
+        int x1 = 4;
+        System.out.println("Input: x = " + x1);
+        System.out.println("Output: " + solution.mySqrt(x1));
+    }
+
     public int mySqrt(int x) {
         if (x < 2) return x;
 
@@ -15,14 +23,6 @@ class sixnine {
         }
 
         return right;
-    }
-
-    public static void main(String[] args) {
-        sixnine solution = new sixnine();
-
-        int x1 = 4;
-        System.out.println("Input: x = " + x1);
-        System.out.println("Output: " + solution.mySqrt(x1));
     }
 }
 

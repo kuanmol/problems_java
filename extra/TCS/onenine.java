@@ -40,8 +40,8 @@ public class onenine {
     }
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int num=scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
         int n = fact(num);
         System.out.println(change(n));
     }

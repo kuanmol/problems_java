@@ -15,7 +15,7 @@ public class detectloop {
         head.next.next.next.next.next = head.next;
         detectloop.detect();
     }
-    
+
     void detect() {
         Node turtle = head, rabbit = head;
         int flag = 0;

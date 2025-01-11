@@ -1,8 +1,24 @@
 package leetcode.binarytree;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 class onezerothree {
+    public static void main(String[] args) {
+        onezerothree solution = new onezerothree();
+
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+
+        System.out.println("Zigzag Level Order Traversal: " + solution.zigzagLevelOrder(root));
+        // Output: [[3], [20, 9], [15, 7]]
+    }
+
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;
@@ -33,20 +49,6 @@ class onezerothree {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        onezerothree solution = new onezerothree();
-
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
-
-        System.out.println("Zigzag Level Order Traversal: " + solution.zigzagLevelOrder(root));
-        // Output: [[3], [20, 9], [15, 7]]
-    }
-
 
     public static class TreeNode {
         int val;

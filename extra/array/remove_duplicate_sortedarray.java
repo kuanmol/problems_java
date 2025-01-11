@@ -12,7 +12,7 @@ public class remove_duplicate_sortedarray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1 ,1 ,2 ,3 ,4 ,5};
+        int[] arr = {1, 1, 2, 3, 4, 5};
         int ans = removedup(arr);
         System.out.println(ans);
     }

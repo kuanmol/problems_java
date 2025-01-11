@@ -22,7 +22,7 @@ public class sixsix {
     public static void main(String[] args) {
         int[] digits1 = {1, 2, 3};
         int[] digits2 = {4, 3, 2, 1};
-        int[] digits3 = {9,9};
+        int[] digits3 = {9, 9};
 
         System.out.println(Arrays.toString(plusOne(digits1)));
         System.out.println(Arrays.toString(plusOne(digits2)));

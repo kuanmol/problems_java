@@ -19,12 +19,15 @@ public class twozero {
         }
         return stack.isEmpty();
     }
+
     private static boolean isOpeningBracket(char c) {
         return c == '(' || c == '{' || c == '[';
     }
+
     private static boolean isClosingBracket(char c) {
         return c == ')' || c == '}' || c == ']';
     }
+
     private static boolean isMatchingPair(char opening, char closing) {
         return (opening == '(' && closing == ')') ||
                 (opening == '{' && closing == '}') ||

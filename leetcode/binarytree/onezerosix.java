@@ -7,6 +7,20 @@ class onezerosix {
     private Map<Integer, Integer> inorderMap = new HashMap<>();
     private int postorderIndex;
 
+    public static void main(String[] args) {
+        onezerosix solution = new onezerosix();
+
+        int[] inorder1 = {9, 3, 15, 20, 7};
+        int[] postorder1 = {9, 15, 7, 20, 3};
+        TreeNode tree1 = solution.buildTree(inorder1, postorder1);
+        System.out.println("Constructed Tree 1 (Preorder): " + tree1);
+
+        int[] inorder2 = {-1};
+        int[] postorder2 = {-1};
+        TreeNode tree2 = solution.buildTree(inorder2, postorder2);
+        System.out.println("Constructed Tree 2 (Preorder): " + tree2);
+    }
+
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         for (int i = 0; i < inorder.length; i++) {
             inorderMap.put(inorder[i], i);
@@ -28,20 +42,6 @@ class onezerosix {
         root.left = buildSubtree(postorder, left, inorderIndex - 1);
 
         return root;
-    }
-
-    public static void main(String[] args) {
-        onezerosix solution = new onezerosix();
-
-        int[] inorder1 = {9, 3, 15, 20, 7};
-        int[] postorder1 = {9, 15, 7, 20, 3};
-        TreeNode tree1 = solution.buildTree(inorder1, postorder1);
-        System.out.println("Constructed Tree 1 (Preorder): " + tree1);
-
-        int[] inorder2 = {-1};
-        int[] postorder2 = {-1};
-        TreeNode tree2 = solution.buildTree(inorder2, postorder2);
-        System.out.println("Constructed Tree 2 (Preorder): " + tree2);
     }
 
     public static class TreeNode {

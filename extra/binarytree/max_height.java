@@ -6,7 +6,7 @@ public class max_height {
     static int maxdepth(Node node) {
         if (node == null)
             return -1;
-        //0 for count node
+            //0 for count node
         else {
             int lheight = maxdepth(node.left);
             int lright = maxdepth(node.right);

@@ -1,8 +1,20 @@
 package extra.string;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class fivethreenine {
+    public static void main(String[] args) {
+        fivethreenine obj = new fivethreenine();
+        List<String> timePoints1 = Arrays.asList("23:59", "00:00");
+        System.out.println(obj.findMinDifference(timePoints1));
+
+        List<String> timePoints2 = Arrays.asList("00:00", "23:59", "00:00");
+        System.out.println(obj.findMinDifference(timePoints2));
+    }
+
     public int findMinDifference(List<String> timePoints) {
         if (timePoints.size() > 1440) {
             return 0;
@@ -29,14 +41,5 @@ public class fivethreenine {
         minDiff = Math.min(minDiff, wrapAroundDiff);
 
         return minDiff;
-    }
-
-    public static void main(String[] args) {
-        fivethreenine obj = new fivethreenine();
-        List<String> timePoints1 = Arrays.asList("23:59", "00:00");
-        System.out.println(obj.findMinDifference(timePoints1));
-
-        List<String> timePoints2 = Arrays.asList("00:00", "23:59", "00:00");
-        System.out.println(obj.findMinDifference(timePoints2));
     }
 }

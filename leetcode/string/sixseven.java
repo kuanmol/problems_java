@@ -1,6 +1,15 @@
 package leetcode.string;
 
 class sixseven {
+    public static void main(String[] args) {
+        sixseven solution = new sixseven();
+
+        String a1 = "11";
+        String b1 = "11";
+        System.out.println("Input: a = " + a1 + ", b = " + b1);
+        System.out.println("Output: " + solution.addBinary(a1, b1));
+    }
+
     public String addBinary(String a, String b) {
         StringBuilder result = new StringBuilder();
         int i = a.length() - 1;
@@ -16,15 +25,6 @@ class sixseven {
         }
 
         return result.reverse().toString();
-    }
-
-    public static void main(String[] args) {
-        sixseven solution = new sixseven();
-
-        String a1 = "11";
-        String b1 = "11";
-        System.out.println("Input: a = " + a1 + ", b = " + b1);
-        System.out.println("Output: " + solution.addBinary(a1, b1));
     }
 }
 

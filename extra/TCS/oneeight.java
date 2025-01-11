@@ -6,7 +6,7 @@ public class oneeight {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String inputString ="apple";// scanner.nextLine();
+        String inputString = "apple";// scanner.nextLine();
 
         String sortingKey = "eapl";//scanner.nextLine();
 

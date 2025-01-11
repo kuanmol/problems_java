@@ -3,28 +3,21 @@ package leetcode.ll;
 class ListNode {
     int val;
     ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }
 
 public class twozerothree {
-    public ListNode removeElements(ListNode head, int val) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode current = dummy;
-
-        while (current.next != null) {
-            if (current.next.val == val) {
-                current.next = current.next.next;
-            } else {
-                current = current.next;
-            }
-        }
-
-        return dummy.next;
-    }
-
     // Helper method to print the linked list
     public static void printList(ListNode head) {
         ListNode current = head;
@@ -56,6 +49,22 @@ public class twozerothree {
 
         System.out.print("List after removing " + valToRemove + ": ");
         printList(result);
+    }
+
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode current = dummy;
+
+        while (current.next != null) {
+            if (current.next.val == val) {
+                current.next = current.next.next;
+            } else {
+                current = current.next;
+            }
+        }
+
+        return dummy.next;
     }
 }
 

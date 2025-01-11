@@ -2,17 +2,28 @@ package extra.binarytree;
 
 public class searchtree {
 
-    class TreeNode {
-        int val;
-        TreeNode left, right;
+    TreeNode root;
 
-        TreeNode(int item) {
-            val = item;
-            left = right = null;
+    public static void main(String[] args) {
+        searchtree tree = new searchtree();
+
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+
+
+        int searchVal = 40;
+        TreeNode result = tree.search(searchVal);
+        if (result != null) {
+            System.out.println("Node with value " + searchVal + " found.");
+        } else {
+            System.out.println("Node with value " + searchVal + " not found.");
         }
     }
-
-    TreeNode root ;
 
     void insert(int val) {
         root = insertRec(root, val);
@@ -45,25 +56,13 @@ public class searchtree {
         return cur;
     }
 
+    class TreeNode {
+        int val;
+        TreeNode left, right;
 
-    public static void main(String[] args) {
-        searchtree tree = new searchtree();
-
-        tree.insert(50);
-        tree.insert(30);
-        tree.insert(20);
-        tree.insert(40);
-        tree.insert(70);
-        tree.insert(60);
-        tree.insert(80);
-
-
-        int searchVal = 40;
-        TreeNode result = tree.search(searchVal);
-        if (result != null) {
-            System.out.println("Node with value " + searchVal + " found.");
-        } else {
-            System.out.println("Node with value " + searchVal + " not found.");
+        TreeNode(int item) {
+            val = item;
+            left = right = null;
         }
     }
 }

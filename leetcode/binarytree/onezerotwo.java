@@ -6,6 +6,18 @@ import java.util.List;
 import java.util.Queue;
 
 class onezerotwo {
+    public static void main(String[] args) {
+        onezerotwo solution = new onezerotwo();
+
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+
+        System.out.println("Level Order Traversal: " + solution.levelOrder(root));
+    }
+
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;
@@ -30,19 +42,6 @@ class onezerotwo {
 
         return result;
     }
-
-    public static void main(String[] args) {
-        onezerotwo solution = new onezerotwo();
-
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
-
-        System.out.println("Level Order Traversal: " + solution.levelOrder(root));
-    }
-
 
     public static class TreeNode {
         int val;

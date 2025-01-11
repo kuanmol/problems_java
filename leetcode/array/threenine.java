@@ -5,6 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class threenine {
+    public static void main(String[] args) {
+        threenine solution = new threenine();
+        int[] candidates = {2, 3, 5};
+        int target = 8;
+        List<List<Integer>> result = solution.combinationSum(candidates, target);
+        System.out.println("Combinations that sum up to " + target + ": " + result);
+    }
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(candidates);
@@ -24,13 +32,5 @@ public class threenine {
                 tempList.remove(tempList.size() - 1);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        threenine solution = new threenine();
-        int[] candidates = {2, 3, 5};
-        int target = 8;
-        List<List<Integer>> result = solution.combinationSum(candidates, target);
-        System.out.println("Combinations that sum up to " + target + ": " + result);
     }
 }

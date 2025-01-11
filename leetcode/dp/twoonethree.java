@@ -2,7 +2,7 @@ package leetcode.dp;
 
 public class twoonethree {
     public static void main(String[] args) {
-        int[] nums = {2, 3, 2,1,6,3,5};
+        int[] nums = {2, 3, 2, 1, 6, 3, 5};
         System.out.println(rob(nums));
     }
 

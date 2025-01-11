@@ -2,9 +2,10 @@ package leetcode.string;
 
 public class onezerotwoone {
     public static void main(String[] args) {
-        String a="(()())(())";
+        String a = "(()())(())";
         System.out.println(removeOuterParentheses(a));
     }
+
     public static String removeOuterParentheses(String s) {
         int len = s.length();
         if (len <= 2) return "";
@@ -15,8 +16,7 @@ public class onezerotwoone {
             if (c[i] == '(') {
                 open++;
                 if (open > 1) newString.append('(');
-            }
-            else {
+            } else {
                 if (open > 1) newString.append(')');
                 open--;
             }
