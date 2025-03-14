@@ -52,7 +52,7 @@ public class four {
 
         // Check if the sum of n and m is odd
         if ((n + m) % 2 == 1) {
-            return (double) m1;
+            return m1;
         } else {
             double ans = (double) m1 + (double) m2;
             return ans / 2.0;

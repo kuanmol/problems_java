@@ -26,11 +26,7 @@ public class onesevenfivetwo {
             }
         }
 
-        if (countBreaks == 1 && nums[n - 1] > nums[0]) {
-            return false;
-        }
-
-        return true;
+        return countBreaks != 1 || nums[n - 1] <= nums[0];
     }
 
 }

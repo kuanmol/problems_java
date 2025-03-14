@@ -3,8 +3,8 @@ package leetcode;
 import java.util.Stack;
 
 class MyQueue {
-    private Stack<Integer> inputStack;
-    private Stack<Integer> outputStack;
+    private final Stack<Integer> inputStack;
+    private final Stack<Integer> outputStack;
 
     public MyQueue() {
         inputStack = new Stack<>();

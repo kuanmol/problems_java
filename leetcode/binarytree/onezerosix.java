@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class onezerosix {
-    private Map<Integer, Integer> inorderMap = new HashMap<>();
+    private final Map<Integer, Integer> inorderMap = new HashMap<>();
     private int postorderIndex;
 
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package leetcode.string;
 
 import java.util.Stack;
 
+//([[{])
 public class twozero {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
@@ -35,7 +36,7 @@ public class twozero {
     }
 
     public static void main(String[] args) {
-        String s = "{{}";
+        String s = "([[{])";
         System.out.println(isValid(s));
     }
 }

@@ -1,7 +1,7 @@
 package leetcode.dp;
 
 public class seventwo {
-    static Integer memo[][];
+    static Integer[][] memo;
 
     public static void main(String[] args) {
         String word1 = "horse", word2 = "ros";

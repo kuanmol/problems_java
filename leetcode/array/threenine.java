@@ -22,7 +22,6 @@ public class threenine {
 
     private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] candidates, int remain, int start) {
         if (remain < 0) {
-            return;
         } else if (remain == 0) {
             list.add(new ArrayList<>(tempList));
         } else {
