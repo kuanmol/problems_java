@@ -69,6 +69,7 @@ class Solution2 {
             }
         }
 
+
         // Find student with second lowest marks
         int min1 = Integer.MAX_VALUE;
         int min2 = Integer.MAX_VALUE;
